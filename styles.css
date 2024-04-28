@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+    font-size: 62.5%;
+}
+
+
+.container{
+    display: grid;
+    font-size: 10rem;
+    grid-template-columns: 70% 1fr;
+    grid-template-areas:
+    "h h"
+    "n n"
+    "m a"
+    "f f";
+}
+
+.header{
+    background-color: rgb(0, 34, 255);
+    grid-area: h;
+    height: 20vh;
+}
+
+.nav{
+    background-color: blueviolet;
+    grid-area: n;
+    height: 10vh;
+}
+
+.main{
+    background-color: cadetblue;
+    grid-area: m;
+    height: 60vh;
+}
+
+.aside{
+    background-color: palegreen;
+    grid-area: a;
+    height: 60vh;
+}
+
+.footer{
+    background-color: thistle;
+    grid-area: f;
+    height: 10vh;
+}
